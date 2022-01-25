@@ -71,20 +71,13 @@ function create() {
 
 let posX = innerWidth - 200;
 function update(time, delta) {
-	if (
-		time % 2 == 0 ||
-		time % 3 == 0 ||
-		time % 7 == 0 ||
-		time % 11 == 0 ||
-		time % 17 == 0 ||
-		time % 19 == 0
-	) {
-		if (time % 6 == 0 || time % 5 == 0 || time % 21 == 0) {
+	if (time % 9 == 0) {
+		if (time % 6 == 0) {
 			this.pipeU = this.pipeUp
 				.get()
 				.setActive(true)
 				.setVisible(true)
-				.setPosition(posX + 200, 90)
+				.setPosition(posX + 200, 140)
 				.setScale(3, 3);
 			this.pipeD = this.pipeDown
 				.get()
