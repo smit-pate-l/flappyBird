@@ -85,6 +85,10 @@ function update(time) {
 				.setVisible(true)
 				.setPosition(posX + 200, game.config.height + 80)
 				.setScale(3, 3);
+		} else {
+			this.pipeU = this.pipeUp.get().setActive(false).setVisible(false);
+
+			this.pipeD = this.pipeDown.get().setActive(false).setVisible(false);
 		}
 
 		this.pipeUp.setVelocityX(-200);
