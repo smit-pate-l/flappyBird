@@ -71,25 +71,15 @@ function create() {
 
 let posX = innerWidth - 200;
 function update(time) {
-	if (time % 23 == 0) {
-		if (time % 17 == 0) {
-			this.pipeU = this.pipeUp
-				.get()
-				.setActive(true)
-				.setVisible(true)
-				.setPosition(posX + 200, 190)
-				.setScale(3, 3);
-			this.pipeD = this.pipeDown
-				.get()
-				.setActive(true)
-				.setVisible(true)
-				.setPosition(posX + 200, game.config.height + 80)
-				.setScale(3, 3);
-		} else {
-			this.pipeU = this.pipeUp.get().setActive(false).setVisible(false);
-
-			this.pipeD = this.pipeDown.get().setActive(false).setVisible(false);
-		}
+	f(time%9 == 0){
+        if(time%6 == 0){
+            this.pipeU = this.pipeUp.get().setActive(true).setVisible(true).setPosition(posX+100,10).setScale(2,2);
+            this.pipeD = this.pipeDown.get().setActive(true).setVisible(true).setPosition(posX+100,game.config.height).setScale(2,2); 
+        }else{
+            this.pipeU = this.pipeUp.get().setActive(true).setVisible(true).setPosition(posX+100,40).setScale(2,2);
+            this.pipeD = this.pipeDown.get().setActive(true).setVisible(true).setPosition(posX+100,game.config.height+40).setScale(2,2);
+        }
+        
 
 		this.pipeUp.setVelocityX(-200);
 		this.pipeDown.setVelocityX(-200);
