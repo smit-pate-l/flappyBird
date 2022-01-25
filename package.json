@@ -1,19 +1,25 @@
 {
-  "name": "flappybirdclone",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/smit-pate-l/flappyBird.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/smit-pate-l/flappyBird/issues"
-  },
-  "homepage": "https://github.com/smit-pate-l/flappyBird#readme"
+	"name": "flappybirdclone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"start:dev": "http-server",
+		"start": "http-server",
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/smit-pate-l/flappyBird.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/smit-pate-l/flappyBird/issues"
+	},
+	"homepage": "https://github.com/smit-pate-l/flappyBird#readme",
+	"dependencies": {
+		"http-server": "^14.1.0",
+		"phaser": "^3.55.2"
+	}
 }
