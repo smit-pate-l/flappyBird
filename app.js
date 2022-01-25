@@ -70,9 +70,9 @@ function create() {
 }
 
 let posX = innerWidth - 200;
-function update(time, delta) {
+function update(time) {
 	if (time % 9 == 0) {
-		if (time % 6 == 0) {
+		if (time % 17 == 0) {
 			this.pipeU = this.pipeUp
 				.get()
 				.setActive(true)
